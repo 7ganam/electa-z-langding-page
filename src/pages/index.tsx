@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import NavBar from '@/components/ui/nav-bar';
 import PageHeader from '@/components/page-header';
-import Timeline from '@/components/timeline';
+import Timeline from '@/components/timeline/timeline';
+import Services from '@/components/services';
+import Why from '@/components/why';
+import ContactUs from '@/components/contact-us';
+import Footer from '@/components/footer';
 export default function Home() {
   return (
     <div>
@@ -15,6 +19,10 @@ export default function Home() {
         <NavBar></NavBar>
         <PageHeader />
         <Timeline />
+        <Services />
+        <Why />
+        <ContactUs />
+        <Footer />
       </main>
 
       <footer className=""></footer>

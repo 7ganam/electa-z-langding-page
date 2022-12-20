@@ -54,11 +54,14 @@ export const Timeline: React.FC = () => {
 
   return (
     <>
-      <div className="container m-auto md:mt-[-150px]">
+      <div id="how" className="container m-auto md:mt-[-150px]">
         <div className="grid grid-cols-11 gap-0">
           <div className="col-span-11 flex items-center justify-center md:col-span-5 "></div>
-          <div className="relative col-span-1 hidden flex-col items-center justify-center md:flex  ">
-            <div className="absolute top-[0px]">
+          <div className="relative col-span-1 hidden flex-col items-center justify-center md:flex">
+            <div className="text-bold absolute top-[-50px] w-36 text-center text-xl text-slate-500">
+              How it works?
+            </div>
+            <div className="absolute top-[0px] ">
               <div
                 className={`${
                   styles[
@@ -81,7 +84,7 @@ export const Timeline: React.FC = () => {
         <TimeLineRow
           pulsNodePosition={'250px'}
           block={
-            <div className="h-[300px] w-[400px] ">
+            <div className="h-[300px] w-[400px] rounded-xl  shadow-xl drop-shadow-xl">
               <Spline
                 style={{
                   width: '100%',
@@ -89,7 +92,10 @@ export const Timeline: React.FC = () => {
                   maxWidth: '100%',
                   maxHeight: '100%',
                 }}
-                scene="https://prod.spline.design/r6myDU-pTNMu5JTQ/scene.splinecode"
+                // scene="https://prod.spline.design/r6myDU-pTNMu5JTQ/scene.splinecode"
+                scene="https://prod.spline.design/8d-4Y1YmABLfxwsL/scene.splinecode"
+                // scene="https://prod.spline.design/BAUZlmD0eesZla38/scene.splinecode"
+                // scene="https://prod.spline.design/Qpb3ych40IUQipNJ/scene.splinecode"
               />
             </div>
           }
@@ -105,7 +111,7 @@ export const Timeline: React.FC = () => {
         <TimeLineRow
           pulsNodePosition={'250px'}
           block={
-            <div className="h-[300px] w-[400px] ">
+            <div className="h-[300px] w-[400px] rounded-xl  shadow-xl drop-shadow-xl ">
               <Spline
                 style={{
                   width: '100%',
@@ -113,7 +119,8 @@ export const Timeline: React.FC = () => {
                   maxWidth: '100%',
                   maxHeight: '100%',
                 }}
-                scene="https://prod.spline.design/8mdDLCi8mX06Osvc/scene.splinecode"
+                // scene="https://prod.spline.design/8mdDLCi8mX06Osvc/scene.splinecode"
+                scene="https://prod.spline.design/BAUZlmD0eesZla38/scene.splinecode"
               />
             </div>
           }
@@ -129,7 +136,7 @@ export const Timeline: React.FC = () => {
         <TimeLineRow
           pulsNodePosition={'250px'}
           block={
-            <div className="h-[400px] w-[400px] ">
+            <div className="h-[400px] w-[250px] rounded-xl  shadow-xl drop-shadow-xl">
               <Spline
                 style={{
                   width: '100%',
@@ -137,7 +144,9 @@ export const Timeline: React.FC = () => {
                   maxWidth: '100%',
                   maxHeight: '100%',
                 }}
-                scene="https://prod.spline.design/WejWCoW44YKC4M8K/scene.splinecode"
+                // scene="https://prod.spline.design/WejWCoW44YKC4M8K/scene.splinecode"
+                // scene="https://prod.spline.design/8d-4Y1YmABLfxwsL/scene.splinecode"
+                scene="https://prod.spline.design/0rdsk7uuiYXNRXry/scene.splinecode"
               />
             </div>
           }
@@ -153,7 +162,7 @@ export const Timeline: React.FC = () => {
         <TimeLineRow
           pulsNodePosition={'250px'}
           block={
-            <div className="h-[300px] w-[300px] ">
+            <div className="h-[300px] w-[300px] rounded-xl  shadow-xl drop-shadow-xl">
               <Spline
                 style={{
                   width: '100%',
@@ -174,7 +183,6 @@ export const Timeline: React.FC = () => {
           length={250}
         ></TimeLineRow>
       </div>
-      <div className="mb-[1000px]"></div>
     </>
   );
 };
@@ -209,7 +217,7 @@ const TimeLineRow: React.FC<TimeLineRowProps> = ({
           <div className="w-full font-noto text-5xl font-bold text-gray-800">
             {title}
           </div>
-          <div className="mt-3 font-play text-2xl text-slate-500 md:text-3xl">
+          <div className="mt-3 font-play text-2xl text-slate-500 md:text-2xl lg:text-3xl">
             {content}
           </div>
         </div>
